@@ -1,0 +1,131 @@
+.user-info {
+    width: 100%;
+    height: 120px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.user-info .head {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 80px;
+    color: #08d;
+}
+
+.user-info .info {
+    line-height: 50px;
+}
+
+.operate {
+    border-top: solid 1px #ddd;
+}
+
+.item {
+    position: relative;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #ddd;
+    background: #fcfcfc;
+    width: 100%;
+    height: 42px;
+    padding: 0 40px 0 50px;
+}
+
+.item .l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    background: #08d;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.item .r {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+
+.item .title {
+    line-height: 40px;
+}
+
+.item .i-company {
+    background: #f90;
+}
+
+.item .i-article {
+    background: #0c0;
+}
+
+.contact {
+    margin-top: 20px;
+    border-top: solid 1px #ddd;
+}
+
+.contact .i-phone {
+    background: #f36;
+}
+
+.contact .r {
+    right: 10px;
+    width: auto;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.logout .button-default {
+    width: 100%;
+    margin: 0 auto;
+    background: #08d;
+    color: #fff;
+}
+
+.right-button {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #08d;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    display: table;
+}
+
+.share{
+    top: 10px;
+    background: #0c0;
+}
+
+.chat{
+    bottom: 60px;
+}
+
+.chat .i {
+    display: table-cell;
+    vertical-align: middle; 
+}
+

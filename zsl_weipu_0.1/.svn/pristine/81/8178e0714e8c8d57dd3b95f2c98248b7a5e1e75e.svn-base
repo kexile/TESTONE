@@ -1,0 +1,57 @@
+<import src="../../common/header/header.wxml" />
+<template is="header" data="{{dialog}}"/>
+
+<view>
+
+    <view class="wx-user">
+        <image class="wx-user-avatar" src="{{wxUserInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="wx-user-nickname">{{wxUserInfo.nickName}}</text>
+    </view>
+
+    <view class="search-wrap">
+        <view class="search">
+            <input name="mobile" class="text-default" maxlength="50" placeholder="请输入关键词进行搜索" />
+            <view class="search-button" catchtap="search">搜索</view>
+        </view>
+    </view>
+
+    <view class="menu">
+        <view class="item">
+            <view class="i icon-product product"></view>
+            <view class="title">现货资源</view>
+        </view>
+        <view class="item">
+            <view class="i icon-company company"></view>
+            <view class="title">公司</view>
+        </view>
+        <view class="item">
+            <view class="i icon-news news"></view>
+            <view class="title">资讯</view>
+        </view>
+        <view class="item">
+            <view class="i icon-book property"></view>
+            <view class="title">物性表</view>
+        </view>
+    </view>
+
+    <swiper class="gallery" indicator-dots="{{gallery.indicatorDots}}" autoplay="{{gallery.autoplay}}" circular="{{gallery.circular}}" interval="{{gallery.interval}}" duration="{{gallery.duration}}">
+        <block wx:for="{{gallery.imageUrls}}">
+            <swiper-item>
+                <image src="{{item}}" class="gallery-image" mode="widthFix"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="tab-head" bindtap="switchTab">
+        <view class="item-head"><text class="head-text {{tab.currentIndex==0 ? 'on' : ''}}" data-index="0">基本信息</text></view>
+        <view class="item-head"><text class="head-text {{tab.currentIndex==1 ? 'on' : ''}}" data-index="1">认证信息</text></view>
+        <view class="item-head"><text class="head-text {{tab.currentIndex==2 ? 'on' : ''}}" data-index="2">店铺相册</text></view>
+    </view>
+
+    <view class="tab-body" bindtouchstart="touchStartTab" bindtouchend="touchEndTab" bindtouchmove="touchMoveTab">
+        <view class="item-body" hidden="{{tab.currentIndex!=0}}" data-index="0">这是基本信息</view>
+        <view class="item-body" hidden="{{tab.currentIndex!=1}}" data-index="1">这是认证信息</view>
+        <view class="item-body" hidden="{{tab.currentIndex!=2}}" data-index="2">这是店铺相册</view>
+    </view>
+
+</view>

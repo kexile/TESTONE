@@ -1,0 +1,5 @@
+<view>
+    <view class="item">
+        <input bindinput="input" bindconfirm="confirm" class="text-default" maxlength="200" value="{{value}}" />
+    </view>
+</view>

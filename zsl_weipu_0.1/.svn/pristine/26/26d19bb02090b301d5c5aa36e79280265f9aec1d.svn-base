@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/content/index/index",
+        "pages/content/company/list",
+        "pages/member/index/index",
+        "pages/user/login/login",
+        "pages/user/register/register",
+        "pages/member/company/info",
+        "pages/common/edit/edit"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0088dd",
+        "navigationBarTitleText": "微铺",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "backgroundColor": "#fcfcfc",
+        "selectedColor": "#0088dd",
+        "list": [
+            {
+                "pagePath": "pages/content/index/index",
+                "text": "首页",
+                "iconPath": "/resources/image/tab/home.png",
+                "selectedIconPath": "/resources/image/tab/home-on.png"
+            },
+            {
+                "pagePath": "pages/content/company/list",
+                "text": "公司",
+                "iconPath": "/resources/image/tab/company.png",
+                "selectedIconPath": "/resources/image/tab/company-on.png"
+            },
+            {
+                "pagePath": "pages/member/index/index",
+                "text": "我",
+                "iconPath": "/resources/image/tab/user.png",
+                "selectedIconPath": "/resources/image/tab/user-on.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

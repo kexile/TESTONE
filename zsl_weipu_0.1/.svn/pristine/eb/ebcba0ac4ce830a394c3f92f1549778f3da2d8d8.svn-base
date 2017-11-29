@@ -1,0 +1,47 @@
+<view class="user-info">
+    <view class="head icon-user-circle"></view>
+    <block wx:if="{{user}}">
+        <navigator url="/pages/member/account/profile" class="info" hover-class="hover">{{user.name}}</navigator>
+    </block>
+    <block wx:else>
+        <navigator url="/pages/user/login/login" class="info" hover-class="hover">立即登录</navigator>
+    </block>
+</view>
+
+<view class="operate">
+    <navigator url="/pages/member/product/list" class="item" hover-class="hover">
+        <view class="l icon-dropbox"></view>
+        <view class="title">产品管理</view>
+        <view class="r icon-angle-right"></view>
+    </navigator>
+    <navigator url="/pages/member/company/info" class="item" hover-class="hover">
+        <view class="l icon-building i-company"></view>
+        <view class="title">店铺管理</view>
+        <view class="r icon-angle-right"></view>
+    </navigator>
+    <navigator url="/pages/member/news/list" class="item" hover-class="hover">
+        <view class="l icon-file-text i-article"></view>
+        <view class="title">文章管理</view>
+        <view class="r icon-angle-right"></view>
+    </navigator>
+</view>
+
+<view class="contact" catchtap="goDial">
+    <view class="item">
+        <view class="l icon-phone i-phone"></view>
+        <view class="title">客服电话</view>
+        <view class="r">{{serviceNumber}}</view>
+    </view>
+</view>
+
+<button class="right-button share icon-share" open-type="share">
+</button>
+
+<view class="right-button chat">
+    <contact-button type="default-light" size="24" session-from="weipu" class="i">
+    </contact-button>
+</view>
+
+<view class="logout" wx:if="{{user}}">
+    <button class="button-default" bindtap="logoutTap">退出</button>
+</view>

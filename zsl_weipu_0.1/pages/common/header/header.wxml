@@ -1,0 +1,5 @@
+<import src="../../common/dialog/dialog.wxml"/>
+
+<template name="header">
+    <template is="dialogMsg" data="{{...dialog.msg}}"></template>
+</template>

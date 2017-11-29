@@ -1,0 +1,26 @@
+<view class="doc">
+
+    <form bindsubmit="formSubmit">
+
+        <view class="item">
+            <label class="icon-mobile"></label>
+            <input name="mobile" type="number" class="text-default" maxlength="20" placeholder="手机号" />
+        </view>
+
+        <view class="item">
+            <label class="icon-lock"></label>
+            <input name="password" password="{{isEyeOn ? false : true}}" class="text-default" maxlength="20" placeholder="密码" />
+            <view class="eye icon-eye-open {{isEyeOn ? 'on' : ''}}" catchtouchstart="eyeTouchStart" catchtouchend="eyeTouchEnd"></view>
+        </view>
+
+        <view class="item">
+            <button class="button-default" form-type="submit">注册</button>
+        </view>
+
+    </form>
+
+    <view class="go">
+        <navigator url="/pages/user/login/login" class="r" hover-class="hover">立即登录</navigator>
+    </view>
+
+</view>

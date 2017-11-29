@@ -1,0 +1,7 @@
+<template name="dialogMsg">
+    <block wx:if="{{isShow? true : false}}">
+    <view class="dialog-msg">
+        <text class="content">{{content}}</text>
+    </view>
+    </block>
+</template>

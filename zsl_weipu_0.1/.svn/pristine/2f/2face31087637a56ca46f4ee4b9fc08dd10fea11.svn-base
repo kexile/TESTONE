@@ -1,0 +1,33 @@
+<import src="../../common/header/header.wxml" />
+<template is="header" data="{{dialog}}"/>
+
+<view class="doc">
+
+    <form bindsubmit="formSubmit">
+
+        <view class="item">
+            <label class="icon-mobile"></label>
+            <input name="mobile" type="number" class="text-default" maxlength="20" placeholder="手机号" />
+        </view>
+
+        <view class="item">
+            <label class="icon-lock"></label>
+            <input name="password" password="true" class="text-default" maxlength="20" placeholder="密码" />
+        </view>
+
+        <view class="item">
+            <label class="vertical-align-middle"><checkbox name="remember" class="vertical-align-middle"/> 自动登录</label>
+        </view>
+
+        <view class="item">
+            <button class="button-default" form-type="submit">登录</button>
+        </view>
+
+    </form>
+
+    <view class="go">
+        <navigator url="/pages/user/findPassword/findPassword" class="l" hover-class="hover">忘记密码？</navigator>
+        <navigator url="/pages/user/register/register" class="r" hover-class="hover">立即注册</navigator>
+    </view>
+
+</view>

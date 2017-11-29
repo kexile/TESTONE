@@ -1,0 +1,68 @@
+.doc {
+    width: 100%;
+    padding: 3%;
+}
+
+.item {
+    padding: 10px 0;
+    position: relative;
+}
+
+[class^="icon-"] {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: #ccc;
+    color: #666;
+}
+
+.text-default {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: solid 1px #ccc;
+    padding: 5px 45px 5px 45px;
+    background:#fff;
+}
+
+.button-default {
+    background: #08d;
+    color: #fff;
+}
+
+.go {
+    height: 40px;
+    line-height: 40px;
+}
+
+.go .l {
+    float: left;
+    color: #08d;
+}
+
+.go .r {
+    float: right;
+    color: #08d;
+}
+
+.eye {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+    z-index:100;
+}
+.eye.on{
+    color: #333;
+}

@@ -1,0 +1,18 @@
+<scroll-view scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refesh" style="height:{{scrollHeight}}px;">
+    <view hidden="{{!showRefesh}}" class="load">
+        <icon type="waiting" size="30" class="icon"/>
+        <text class="text">正在刷新</text>
+    </view>
+    <view class="list">
+        <view wx:for="{{list}}" class="item">
+            <view class="name">{{index+1}}.{{item.companyName}}</view>
+        </view>
+    </view>
+    <view hidden="{{!showLoadMore}}" class="load">
+        <icon type="waiting" size="30" class="icon"/>
+        <text class="text">正在加载</text>
+    </view>
+    <view hidden="{{!showNoMore}}" class="load">
+        <text>没有更多内容</text>
+    </view>
+</scroll-view>

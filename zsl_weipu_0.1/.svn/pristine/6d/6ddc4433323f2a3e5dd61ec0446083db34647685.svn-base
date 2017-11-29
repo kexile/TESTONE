@@ -1,0 +1,21 @@
+.dialog-msg {
+    position: fixed;
+    left: 0;
+    bottom: 10%;
+    z-index: 999999;
+    width: 100%;
+    text-align: center;
+}
+
+.dialog-msg .content {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    line-height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    width: auto;
+    max-width: 80%;
+    min-width: 20%;
+    border-radius: 5px;
+}
